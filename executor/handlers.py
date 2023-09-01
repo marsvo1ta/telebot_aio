@@ -1,6 +1,6 @@
 from app import dp
 from aiogram import types
-from triggers.health_check_dispatch import health_check_dispatch
+from .triggers.health_check_dispatch import health_check_dispatch
 
 
 @dp.message_handler(commands="start")
@@ -14,12 +14,12 @@ async def process_help_command(message: types.Message):
 
 
 @dp.message_handler(commands=['regress'])
-async def process_help_command(message: types.Message):
+async def regress_command(message: types.Message):
     await message.reply("Regress has started")
 
 
 @dp.message_handler(commands=['health_check'])
-async def process_help_command(message: types.Message):
+async def health_check_command(message: types.Message):
     health_check_dispatch()
     await message.reply("Health Check has started")
 

@@ -10,10 +10,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-#    env:
-#      DISPATCH: ${{ secrets.DISPATCH }}
-#      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-#      HEALTH_CHECK_CHAT_ID: ${{ secrets.HEALTH_CHECK_CHAT_ID }}
+    env:
+      DISPATCH: ${{ secrets.DISPATCH }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      HEALTH_CHECK_CHAT_ID: ${{ secrets.HEALTH_CHECK_CHAT_ID }}
 
     steps:
     - uses: actions/checkout@v3

@@ -30,4 +30,5 @@ jobs:
 
     - name: Run Bot
       run: |
+        export PYTHONPATH=$PYTHONPATH:.
         python executor/starting.py

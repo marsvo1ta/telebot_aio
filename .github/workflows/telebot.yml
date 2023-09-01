@@ -28,6 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-#    - name: Run Bot
-#      run: |
-#        python executor/starting.py
+    - name: Run Bot
+      run: |
+        python executor/starting.py

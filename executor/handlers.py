@@ -1,6 +1,6 @@
 from app import dp
 from aiogram import types
-from .triggers.health_check_dispatch import health_check_dispatch
+from triggers.health_check_dispatch import health_check_dispatch
 
 
 @dp.message_handler(commands="start")

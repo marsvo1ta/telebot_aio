@@ -6,12 +6,6 @@
       "source": "/(.*)",
       "destination": "executor/starting.py"
     }
-  ],
-  "routes": [
-    {
-      "src": "/pol",
-      "dest": "/executor/starting.py"
-    }
   ]
 }
 

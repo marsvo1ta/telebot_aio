@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "executor/starting.py",
-      "use": "@vercel/python3.11"
+      "use": "@vercel/python"
     }
   ],
   "routes": [

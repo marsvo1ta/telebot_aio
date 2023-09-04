@@ -1,18 +1,15 @@
 {
-  "version": 2,
-  "public": true,
-  "builds": [
-    {
-      "src": "executor/*.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/pol",
-      "dest": "/executor/starting.py"
-    }
-  ]
+	    "builds": [{
+	        "src": "executor/starting.py",
+	        "use": "@vercel/python",
+	        "config": { "maxLambdaSize": "15mb" }
+	    }],
+	    "routes": [
+	        {
+	            "src": "/(.*)",
+	            "dest": "executor/starting.py"
+	        }
+	    ]
 }
 
 

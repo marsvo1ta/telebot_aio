@@ -2,6 +2,10 @@
   "version": 2,
   "builds": [
     {
+      "src": "executor/app.py",
+      "use": "@vercel/python"
+    },
+    {
       "src": "executor/starting.py",
       "use": "@vercel/python"
     }

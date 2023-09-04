@@ -3,7 +3,7 @@
   "public": true,
   "builds": [
     {
-      "src": "vercel_app/wsgi.py",
+      "src": "executor/starting.py",
       "use": "@vercel/python"
     }
   ],

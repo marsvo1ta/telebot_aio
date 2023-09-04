@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "builds": [
+  "public": true,
+  "rewrites": [
     {
-      "src": "executor/app.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "executor/starting.py",
-      "use": "@vercel/python"
+      "source": "/(.*)",
+      "destination": "executor/starting.py"
     }
   ],
   "routes": [

@@ -2,13 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "executor/starting.py",
+      "src": "/",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/long-polling",
+      "src": "/",
       "dest": "/executor/starting.py"
     }
   ]

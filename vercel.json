@@ -1,5 +1,4 @@
 {
-  "name": "telebot-aio",
   "version": 2,
   "builds": [
     {
@@ -12,11 +11,11 @@
       "src": "/long-polling",
       "dest": "/executor/starting.py"
     }
-  ],
-  "env": {
-    "TELEGRAM_TOKEN": "@TELEGRAM_TOKEN",
-    "HEALTH_CHECK_CHAT_ID": "@HEALTH_CHECK_CHAT_ID",
-    "DISPATCH": "@DISPATCH"
+  ]
+//  "env": {
+//    "TELEGRAM_TOKEN": "@TELEGRAM_TOKEN",
+//    "HEALTH_CHECK_CHAT_ID": "@HEALTH_CHECK_CHAT_ID",
+//    "DISPATCH": "@DISPATCH"
   }
 }
 

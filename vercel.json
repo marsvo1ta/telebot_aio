@@ -3,17 +3,16 @@
   "public": true,
   "builds": [
     {
-      "src": "executor/starting.py",
+      "src": "executor/*.py",
       "use": "@vercel/python"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "executor/starting.py"
+      "src": "/pol",
+      "dest": "/executor/starting.py"
     }
   ]
 }
-
 
 

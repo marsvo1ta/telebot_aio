@@ -28,9 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-#    - name: Run Bot
-#      run: |
-#        export PYTHONPATH=$PYTHONPATH:.
+    - name: Run Bot
+      run: |
+        export PYTHONPATH=$PYTHONPATH:.
 #        python executor/starting.py
 
     - name: Install Vercel CLI

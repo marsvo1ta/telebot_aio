@@ -11,7 +11,8 @@ app = FastAPI()
   
  @app.get("/") 
  async def root(): 
-     return {"message": "Hello World"}#a
+     return {"message": "Hello World"}
+#a
 # def notify_message(dp):
 #    print('Bot is starting')
 #    await dp.bot.send_message(CHAT_ID, text="Bot is starting")

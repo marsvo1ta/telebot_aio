@@ -6,13 +6,13 @@ from fastapi import FastAPI
 
 
 
-app = FastAPI() 
+#app = FastAPI() 
   
   
-@app.get("/") 
-async def root():
-    executor.start_polling(dp, skip_updates=True) 
-    return {"message": "Hello World"}
+#@app.get("/") 
+#async def root():
+app = executor.start_polling(dp, skip_updates=True) 
+    #return {"message": "Hello World"}
 #a
 # def notify_message(dp):
 #    print('Bot is starting')

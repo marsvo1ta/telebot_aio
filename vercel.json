@@ -1,13 +1,13 @@
 {
 	    "builds": [{
-	        "src": "executor/starting.py",
+	        "src": "starting.py",
 	        "use": "@vercel/python",
 	        "config": { "maxLambdaSize": "15mb" }
 	    }],
 	    "routes": [
 	        {
 	            "src": "/(.*)",
-	            "dest": "executor/starting.py"
+	            "dest": "starting.py"
 	        }
 	    ]
 }

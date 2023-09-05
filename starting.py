@@ -1,9 +1,9 @@
 from aiogram.utils import executor
-from app import CHAT_ID
-from handlers import *
+from executor.app import CHAT_ID
+from executor.handlers import *
 
 
-async def notify_message(dp): # THIS FUNCTION
+async def notify_message(dp):
     print('Bot is starting')
     await dp.bot.send_message(CHAT_ID, text="Bot is starting")
 

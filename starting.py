@@ -1,7 +1,7 @@
 from aiogram.utils import executor
 #from executor.app import CHAT_ID
 #from executor.handlers import *
-#from executor.app import app
+from executor.app import *
 from fastapi import FastAPI
 
 

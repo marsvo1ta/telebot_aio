@@ -1,4 +1,4 @@
-#from aiogram.utils import executor
+from aiogram.utils import executor
 #from executor.app import CHAT_ID
 #from executor.handlers import *
 #from executor.app import app
@@ -10,7 +10,8 @@ app = FastAPI()
   
   
 @app.get("/") 
-async def root(): 
+async def root():
+    executor.start_polling(dp, skip_updates=True) 
     return {"message": "Hello World"}
 #a
 # def notify_message(dp):

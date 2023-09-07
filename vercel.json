@@ -1,14 +1,8 @@
 {
-	    "builds": [{
-	        "src": "starting.py",
-	        "use": "@vercel/python"
-	        }],
-	    "routes": [
-	        {
-	            "src": "/(.*)",
-	            "dest": "starting.py"
-	        }
-	    ]
+	"routes": [
+		{
+			"src": "/api/bot",
+			"dest": "main.py"
+		}
+	]
 }
-
-

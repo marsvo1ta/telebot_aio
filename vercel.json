@@ -1,7 +1,7 @@
 {
 	"routes": [
 		{
-			"src": "/api/bot",
+			"src": "/",
 			"dest": "main.py"
 		}
 	]

@@ -26,7 +26,7 @@ if __name__ == '__main__':
     from aiogram import executor
     executor.start_webhook(
         dispatcher=dp,
-        webhook_path='/api/bot',
+        webhook_path='/',
         on_startup=None,
         on_shutdown=None,
         host='0.0.0.0',  # Адреса сервера

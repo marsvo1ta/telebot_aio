@@ -5,8 +5,5 @@
       "src": "/",
       "dest": "main.py"
     }
-  ],
-  "env": {
-    "WEBHOOK_URL": "https://vercel.com/marsvo1ta/telebot-aio"
-  }
+  ]
 }

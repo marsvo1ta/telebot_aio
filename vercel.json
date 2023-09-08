@@ -3,8 +3,7 @@
   "builds": [
     {
       "src": "main.py",
-      "use": "python",
-      "config": { "maxLambdaSize": "50mb" }
+      "use": "python"
     }
   ],
   "routes": [

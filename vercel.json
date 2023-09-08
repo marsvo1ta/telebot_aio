@@ -1,8 +1,19 @@
 {
-	"routes": [
-		{
-			"src": "/",
-			"dest": "main.py"
-		}
-	]
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@now/python",
+      "config": { "maxLambdaSize": "50mb" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "telegram_bot.py"
+    }
+  ],
+  "env": {
+    "WEBHOOK_URL": "https://vercel.com/marsvo1ta/telebot-aio"
+  }
 }

@@ -10,5 +10,8 @@
       "src": "/",
       "dest": "main.py"
     }
-  ]
+  ],
+  "env": {
+    "TELEGRAM_TOKEN": "_TELEGRAM_TOKEN"
+  }
 }

@@ -1,8 +1,10 @@
 
-import asyncio
+from aiohttp import web
 
-async def main():
-    return "Hello, World!"
+async def handle(request):
+    return web.Response(text="Hello, world!")
 
-if __name__ == "__main__":
-    asyncio.run(main())
+app = web.Application()
+app.router.add_get('/', handle)
+
+web.run_app(app)

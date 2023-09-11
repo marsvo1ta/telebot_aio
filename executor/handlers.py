@@ -1,4 +1,4 @@
-from app import dp
+from executor.confs import dp
 from aiogram import types
 from triggers.health_check_dispatch import health_check_dispatch
 

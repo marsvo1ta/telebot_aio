@@ -4,7 +4,7 @@ from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.utils import executor
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
-WEBHOOK_URL = 'https://vercel.com/marsvo1ta/telebot-aio'
+WEBHOOK_URL = 'http://localhost:3000'
 WEBHOOK_PATH = "/"
 
 bot = Bot(token=TOKEN)

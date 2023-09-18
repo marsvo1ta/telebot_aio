@@ -1,0 +1,10 @@
+from os import getenv
+
+TOKEN = getenv("TELEGRAM_TOKEN")
+CHAT_ID = getenv("HEALTH_CHECK_CHAT_ID")
+
+WEB_SERVER_HOST = "::"
+WEB_SERVER_PORT = 8350
+WEBHOOK_PATH = "/"
+WEBHOOK_SECRET = "my-secret"
+BASE_WEBHOOK_URL = getenv("BASE_WEBHOOK_URL")
